@@ -1,6 +1,6 @@
 # Snyk GitHub Issue Creator
 
-The GitHub Issue creator utilizes PyGitHub and Snyk's API to create an GitHub Issue for vulnerabilities or license issues you may have in your projects in Snyk. It's currently set up to run as a GitHub action executing on a cron job daily at midnight. However, with GitHub Actions, this can be triggered with a pull request, commit, etc. Since it utilizes [Snyk's API](https://snyk.docs.apiary.io/#introduction), there's plenty of customization for what type of issues you'd like to add to GH. 
+The GitHub Issue creator utilizes PyGitHub and Snyk's API to create a GitHub Issue for vulnerabilities or license issues you may have in your projects in Snyk. It's currently set up to run as a GitHub action executing on a cron job daily at midnight. However, with GitHub Actions, this can be triggered with a pull request, commit, etc. Since it utilizes [Snyk's API](https://snyk.docs.apiary.io/#introduction), there's plenty of customization for what type of issues you'd like to add to GH. 
 
 Once an issue has been fixed in Snyk, the issue in GitHub will be closed the next time the program is run. Currently, it's set up to add vulnerabilities that are fixable, and that have not yet been fixed in Snyk.
 
