@@ -46,7 +46,7 @@ workflows:
                 - master
     jobs:
       - build-test-monitor:
-          context: SNYK
+          context: SNYK_TOKEN
           filters:
             branches:
               only: 
@@ -54,4 +54,4 @@ workflows:
   build-test:
     jobs:
       - build-test:
-          context: SNYK
+          context: SNYK_TOKEN
