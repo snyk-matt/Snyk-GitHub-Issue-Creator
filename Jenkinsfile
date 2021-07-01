@@ -15,13 +15,9 @@ pipeline {
     agent none 
     stages {
         stage('Build') { 
-            agent {
-                docker {
-                    image 'python:3-alpine' 
-                }
-            }
+            agent any
             steps {
-                sh "pip3 install -r requirements.txt"
+                snykSecurity snykInstallation: 'installSnyk', snykTokenId: 'snykAuth'
             }
         }
     }
