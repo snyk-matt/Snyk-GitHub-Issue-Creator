@@ -21,7 +21,7 @@ pipeline {
                 }
             }
             steps {
-                echo 'Python app built'
+                snykSecurity projectName: 'Jenkins Pipeline goof', snykInstallation: 'install-snyk', snykTokenId: snykAuth
             }
         }
     }
