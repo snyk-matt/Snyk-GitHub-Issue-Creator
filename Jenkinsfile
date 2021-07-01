@@ -21,7 +21,7 @@ pipeline {
                 }
             }
             steps {
-                snykSecurity projectName: 'Jenkins Pipeline goof', snykInstallation: 'installSnyk', snykTokenId: 'snykAuth'
+                snykSecurity snykInstallation: 'installSnyk', snykTokenId: 'snykAuth'
             }
         }
     }
