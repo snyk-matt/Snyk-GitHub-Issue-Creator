@@ -1,8 +1,7 @@
 pipeline {
-    agent none
+    agent any
     stages {
         stage('Build') {
-            agent any
             steps {
                 echo 'Python app built'
             }
