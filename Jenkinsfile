@@ -21,7 +21,7 @@ pipeline {
                 }
             }
             steps {
-                snykSecurity snykInstallation: 'installSnyk', snykTokenId: 'snykAuth'
+                sh "pip3 install -r requirements.txt"
             }
         }
     }
