@@ -4,6 +4,8 @@ The GitHub Issue creator utilizes Snyk's API to create a GitHub Issue for vulner
 
 Once an issue has been fixed in Snyk, the issue in GitHub will be closed the next time the program is run. Currently, it's set up to add vulnerabilities that are fixable, and that have not yet been fixed in Snyk.
 
+A list of example issues and output can be found in this repository: https://github.com/snyk-matt/Snyk-All-Issues/issues
+
 References to Snyk's API and some example configurations utilizing its [Reporting API](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-issues) (using the section titled `Get list of issues`) shown below:
 
 ## Template for preffered attributes and filters:
